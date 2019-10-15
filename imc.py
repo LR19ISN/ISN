@@ -1,0 +1,5 @@
+m = float(input())
+t = float(input())
+imc = m / (t**2)
+imc = str(round(imc,2))
+print("Votre imc est : " + imc)
