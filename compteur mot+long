@@ -1,0 +1,17 @@
+phrase=str(input())
+print(phrase)
+
+mots=phrase.split()
+
+
+lon=len(mots[0])
+grab=0
+
+for i in range(0, len(mots)):
+    y=len(mots[i])
+    if (y>lon):
+        grab=i
+        lon=y
+
+print('Il y a' , len(mots) , 'mots')
+print('Le plus long est \'', mots[grab] , '\' avec' , len(mots[grab]) , 'lettres')
