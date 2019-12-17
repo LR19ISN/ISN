@@ -1,0 +1,12 @@
+l_eleve=["Lucas",'jules','Sofiane',"Rémi","Jessim"]#la liste
+y=len(l_eleve)
+classe='Il y\'a dans la classe : '
+print(l_eleve)
+for i in range(0,y):
+    if (i==y-1):
+        classe=classe+' et '+l_eleve[i]+'.'
+    elif (i==y-2):
+        classe=classe+l_eleve[i]
+    else:
+        classe=classe+l_eleve[i]+', '
+print(classe)
